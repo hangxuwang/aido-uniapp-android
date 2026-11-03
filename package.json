@@ -1,0 +1,17 @@
+{
+  "name": "aido-uniapp-android",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AIDO 安卓端 uni-app 应用，支持本地保存 AI/SSH 配置并通过 AI 驱动服务器命令执行。",
+  "scripts": {
+    "dev:h5": "vite",
+    "build:h5": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "^3.0.0-4050620240325001",
+    "vite": "^5.2.0"
+  }
+}

@@ -1,0 +1,23 @@
+import { IsAvailable, Exec, SshExecResult } from '../interface.uts'
+
+export const isAvailable : IsAvailable = function () : boolean {
+	return true
+}
+
+export const exec : Exec = function (options) : SshExecResult {
+	const raw = SshBridge.execJson(
+		options.host,
+		options.port.toInt(),
+		options.username,
+		options.password,
+		options.command,
+		options.connectTimeoutMs.toInt()
+	)
+	const parsed = JSON.parse(raw) as UTSJSONObject
+	return {
+		code: parsed['code'] as number,
+		stdout: parsed['stdout'] as string,
+		stderr: parsed['stderr'] as string,
+		durationMs: parsed['durationMs'] as number
+	}
+}

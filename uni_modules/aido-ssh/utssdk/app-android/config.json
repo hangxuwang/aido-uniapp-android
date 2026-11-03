@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "com.jcraft:jsch:0.1.55"
+  ],
+  "minSdkVersion": 21
+}

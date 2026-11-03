@@ -1,0 +1,7 @@
+{
+  "name": "aido-ssh-executor",
+  "id": "AidoSshExecutor",
+  "version": "0.1.0",
+  "description": "AIDO 安卓 SSH 执行插件",
+  "_dp_type": "nativeplugin"
+}

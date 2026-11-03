@@ -1,0 +1,7 @@
+{
+  "id": "aido-ssh",
+  "displayName": "AIDO SSH",
+  "version": "0.1.0",
+  "description": "AIDO 项目内置 SSH UTS 插件",
+  "uni_modules": {}
+}

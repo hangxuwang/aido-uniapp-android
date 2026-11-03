@@ -1,0 +1,18 @@
+export type SshExecOptions = {
+	host: string
+	port: number
+	username: string
+	password: string
+	command: string
+	connectTimeoutMs: number
+}
+
+export type SshExecResult = {
+	code: number
+	stdout: string
+	stderr: string
+	durationMs: number
+}
+
+export type IsAvailable = () => boolean
+export type Exec = (options: SshExecOptions) => SshExecResult

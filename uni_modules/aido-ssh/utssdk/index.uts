@@ -1,0 +1,14 @@
+import { IsAvailable, Exec, SshExecResult } from './interface.uts'
+
+export const isAvailable : IsAvailable = function () : boolean {
+	return false
+}
+
+export const exec : Exec = function (_options) : SshExecResult {
+	return {
+		code: -1,
+		stdout: '',
+		stderr: '当前平台不支持 SSH。',
+		durationMs: 0
+	}
+}
